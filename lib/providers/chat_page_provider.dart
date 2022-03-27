@@ -79,6 +79,7 @@ class ChatPageProvider extends ChangeNotifier {
         filteredList.add(element);
       }
     }
+    //soring messages
     filteredList.sort((a, b) => b.insertDate!.compareTo(a.insertDate!));
     return filteredList;
   }
